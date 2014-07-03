@@ -32,6 +32,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [MGWU loadMGWU:@"c1SRjlz5FuNEl8E8LLxUm2JhnnEozyXITOliMPi4amV8NnxuQWSnDFsCuc2kD4CKAft0xVHEd1McNTXL0EcGeoYuWqtfg20esQcWZOaPT3RV15JeLAyDCzR"];
+    [MGWU preFacebook];
+    [MGWU dark];
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
@@ -59,7 +63,7 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"MainScene"];
+    return [CCBReader loadAsScene:@"Gameplay1"];
 }
 
 @end
