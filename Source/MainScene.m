@@ -39,4 +39,11 @@
     touchLocation = [touch locationInNode:self];
 }
 
+#pragma mark - Selector Methods
+
+-(void)findNewGame
+{
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay1"]];
+}
+
 @end

@@ -10,4 +10,9 @@
 
 @implementation OptionsScene
 
+-(void)goBack
+{
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"MainScene"]];
+}
+
 @end

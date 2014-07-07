@@ -1,13 +1,13 @@
 //
-//  TileText.h
+//  ResultsCostPopup.h
 //  datinggame
 //
-//  Created by Mark on 7/3/14.
+//  Created by Mark on 7/7/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
 #import "CCNode.h"
 
-@interface TileText : CCNode
+@interface ResultsCostPopup : CCNode
 
 @end
