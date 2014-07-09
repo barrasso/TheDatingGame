@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		04324BA21965BD64002BB054 /* Gameplay1.m in Sources */ = {isa = PBXBuildFile; fileRef = 04324BA11965BD64002BB054 /* Gameplay1.m */; };
-		04324BB91965E787002BB054 /* tileLabelContent.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04324BB81965E787002BB054 /* tileLabelContent.txt */; };
+		04324BB91965E787002BB054 /* gameplay1Content.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04324BB81965E787002BB054 /* gameplay1Content.txt */; };
 		044A5A641964D41200BD718B /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A5A631964D41200BD718B /* LoginScene.m */; };
 		044A5A671964D49E00BD718B /* AccountCreationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A5A661964D49E00BD718B /* AccountCreationScene.m */; };
 		044A5A6A1964D4B100BD718B /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A5A691964D4B100BD718B /* OptionsScene.m */; };
-		048EE721196B314400A65AAF /* RoundEndPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE720196B314400A65AAF /* RoundEndPopup.m */; };
+		045AD25B196DAA430073BFAA /* PostGameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AD25A196DAA430073BFAA /* PostGameplay.m */; };
 		048EE726196B4A8200A65AAF /* ResultsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE725196B4A8200A65AAF /* ResultsScene.m */; };
 		048EE729196B4CF900A65AAF /* ResultsCostPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 048EE728196B4CF900A65AAF /* ResultsCostPopup.m */; };
 		049E74761964C4C7005AA5AB /* mgwuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049E74751964C4C7005AA5AB /* mgwuSDK.framework */; };
@@ -78,15 +78,15 @@
 /* Begin PBXFileReference section */
 		04324BA01965BD64002BB054 /* Gameplay1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay1.h; path = Source/Gameplay1.h; sourceTree = "<group>"; };
 		04324BA11965BD64002BB054 /* Gameplay1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay1.m; path = Source/Gameplay1.m; sourceTree = "<group>"; };
-		04324BB81965E787002BB054 /* tileLabelContent.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tileLabelContent.txt; path = Source/tileLabelContent.txt; sourceTree = "<group>"; };
+		04324BB81965E787002BB054 /* gameplay1Content.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = gameplay1Content.txt; path = Source/gameplay1Content.txt; sourceTree = "<group>"; };
 		044A5A621964D41200BD718B /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScene.h; path = Source/LoginScene.h; sourceTree = "<group>"; };
 		044A5A631964D41200BD718B /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScene.m; path = Source/LoginScene.m; sourceTree = "<group>"; };
 		044A5A651964D49E00BD718B /* AccountCreationScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountCreationScene.h; path = Source/AccountCreationScene.h; sourceTree = "<group>"; };
 		044A5A661964D49E00BD718B /* AccountCreationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountCreationScene.m; path = Source/AccountCreationScene.m; sourceTree = "<group>"; };
 		044A5A681964D4B100BD718B /* OptionsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsScene.h; path = Source/OptionsScene.h; sourceTree = "<group>"; };
 		044A5A691964D4B100BD718B /* OptionsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsScene.m; path = Source/OptionsScene.m; sourceTree = "<group>"; };
-		048EE71F196B314400A65AAF /* RoundEndPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundEndPopup.h; path = Source/RoundEndPopup.h; sourceTree = "<group>"; };
-		048EE720196B314400A65AAF /* RoundEndPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundEndPopup.m; path = Source/RoundEndPopup.m; sourceTree = "<group>"; };
+		045AD259196DAA430073BFAA /* PostGameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostGameplay.h; path = Source/PostGameplay.h; sourceTree = "<group>"; };
+		045AD25A196DAA430073BFAA /* PostGameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostGameplay.m; path = Source/PostGameplay.m; sourceTree = "<group>"; };
 		048EE724196B4A8200A65AAF /* ResultsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsScene.h; path = Source/ResultsScene.h; sourceTree = "<group>"; };
 		048EE725196B4A8200A65AAF /* ResultsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsScene.m; path = Source/ResultsScene.m; sourceTree = "<group>"; };
 		048EE727196B4CF900A65AAF /* ResultsCostPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsCostPopup.h; path = Source/ResultsCostPopup.h; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		04324BA41965C0C8002BB054 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				04324BB81965E787002BB054 /* tileLabelContent.txt */,
+				04324BB81965E787002BB054 /* gameplay1Content.txt */,
 			);
 			name = Content;
 			sourceTree = "<group>";
@@ -184,8 +184,6 @@
 		04324BAC1965DB3B002BB054 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				048EE71F196B314400A65AAF /* RoundEndPopup.h */,
-				048EE720196B314400A65AAF /* RoundEndPopup.m */,
 				048EE727196B4CF900A65AAF /* ResultsCostPopup.h */,
 				048EE728196B4CF900A65AAF /* ResultsCostPopup.m */,
 			);
@@ -205,6 +203,8 @@
 				044A5A691964D4B100BD718B /* OptionsScene.m */,
 				048EE724196B4A8200A65AAF /* ResultsScene.h */,
 				048EE725196B4A8200A65AAF /* ResultsScene.m */,
+				045AD259196DAA430073BFAA /* PostGameplay.h */,
+				045AD25A196DAA430073BFAA /* PostGameplay.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
-				04324BB91965E787002BB054 /* tileLabelContent.txt in Resources */,
+				04324BB91965E787002BB054 /* gameplay1Content.txt in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
@@ -474,8 +474,8 @@
 				048EE729196B4CF900A65AAF /* ResultsCostPopup.m in Sources */,
 				044A5A671964D49E00BD718B /* AccountCreationScene.m in Sources */,
 				044A5A6A1964D4B100BD718B /* OptionsScene.m in Sources */,
-				048EE721196B314400A65AAF /* RoundEndPopup.m in Sources */,
 				044A5A641964D41200BD718B /* LoginScene.m in Sources */,
+				045AD25B196DAA430073BFAA /* PostGameplay.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

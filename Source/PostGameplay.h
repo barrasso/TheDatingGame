@@ -1,13 +1,13 @@
 //
-//  RoundEndPopup.h
+//  PostGameplay.h
 //  datinggame
 //
-//  Created by Mark on 7/7/14.
+//  Created by Mark on 7/9/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
 #import "CCNode.h"
 
-@interface RoundEndPopup : CCNode
+@interface PostGameplay : CCNode
 
 @end

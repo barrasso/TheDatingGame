@@ -21,4 +21,9 @@
     // Take user to store buy more credits
 }
 
+-(void)closeCostPopup
+{
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"PostGameplay"]];
+}
+
 @end

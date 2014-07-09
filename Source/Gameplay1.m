@@ -7,13 +7,13 @@
 //
 
 #import "Gameplay1.h"
-#import "RoundEndPopup.h"
+#import "PostGameplay.h"
 
 static const int maxTilesSelected = 30;
 
 @implementation Gameplay1
 {
-    int gameTimer;
+    int gameTimer;  // make look like hour glass or clock ticking down instead of text label
     int randomIndex;
     int tilesSelected;
     int responseTracker;
@@ -58,13 +58,6 @@ static const int maxTilesSelected = 30;
 
 -(void)update:(CCTime)delta
 {
-    // If start button is touched
-    if(CGRectContainsPoint(_startButton.boundingBox, touchLocation))
-    {
-        // Start the game
-        [self startGame];
-    }
-    
     // If the game is started
     if (isGameStarted)
     {
@@ -119,7 +112,7 @@ static const int maxTilesSelected = 30;
     _tileLabel.visible = NO;
     
     // Read in content.txt and separate strings by new line
-    path = [[NSBundle mainBundle] pathForResource:@"tileLabelContent" ofType:@"txt"];
+    path = [[NSBundle mainBundle] pathForResource:@"gameplay1Content" ofType:@"txt"];
     allContent = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     lines = [allContent componentsSeparatedByString:@"\n"];
     
@@ -142,8 +135,8 @@ static const int maxTilesSelected = 30;
     // Then remove that string to prevent repeats
     [currentGameContent removeObjectAtIndex:randomIndex];
     
-    // Hide start button
-    _startButton.visible = NO;
+    // Hide and disable start button
+    [_startButton removeFromParent];
     
     // Make game elements hidden
     _tile1.visible = YES;
@@ -160,23 +153,18 @@ static const int maxTilesSelected = 30;
     // Pause Game
     self.paused = YES;
     
-    // Load the Round End Popup
-    RoundEndPopup *endPopup = (RoundEndPopup *)[CCBReader load:@"RoundEndPopup"];
-    endPopup.positionType = CCPositionTypeNormalized;
-    endPopup.position = ccp(0.5,0.5);
-    [self addChild:endPopup];
-    
-    // Debugging NSLog statements
-//    NSLog(@"%@",usedContent);
-//    NSLog(@"%lu",(unsigned long)[usedContent count]);
-//    NSLog(@"%@",responses);
-//    NSLog(@"%lu",(unsigned long)[responses count]);
-    NSLog(@"Game Over, bitch.");
- 
     // Hide game elements
     _tile1.visible = NO;
     _tile2.visible = NO;
     _tileLabel.visible = NO;
+    
+    // Load the Recap Scene
+    PostGameplay *recap = (PostGameplay*)[CCBReader loadAsScene:@"PostGameplay"];
+    recap.positionType = CCPositionTypeNormalized;
+    recap.position = ccp(0,0);
+    [self addChild:recap];
+    
+    NSLog(@"Game Over, bitch.");
 }
 
 #pragma mark - Tile Handling

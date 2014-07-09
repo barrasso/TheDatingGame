@@ -25,11 +25,7 @@
 
 -(void)update:(CCTime)delta
 {
-    // If options picture clicked
-    if (CGRectContainsPoint(_optionsCog.boundingBox, touchLocation)) {
-        CCScene *options = [CCBReader loadAsScene:@"OptionsScene"];
-        [self addChild:options];
-    }
+
 }
 
 #pragma mark - Touch Handling
@@ -41,9 +37,24 @@
 
 #pragma mark - Selector Methods
 
+-(void)goToOptions
+{
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"OptionsScene"]];
+}
+
+-(void)goToMatches
+{
+    
+}
+
 -(void)findNewGame
 {
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay1"]];
+}
+
+-(void)viewRecap
+{
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"PostGameplay"]];
 }
 
 @end
